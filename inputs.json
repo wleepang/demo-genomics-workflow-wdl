@@ -1,0 +1,15 @@
+{
+    "simple_variant_call.sample_id": "NIST7035",
+    "simple_variant_call.input_prefix": "s3://aws-batch-genomics-shared/secondary-analysis/example-files/fastq",
+    "simple_variant_call.reference": "s3://broad-references/hg38/v0/Homo_sapiens_assembly38.fasta",
+    "simple_variant_call.chromosomes": [
+        "chr19",
+        "chr20",
+        "chr21",
+        "chr22"
+    ],
+    "simple_variant_call.fastqs": [
+        "${input_prefix}/${sample_id}_R1_trim_samp-0p1.fastq.gz",
+        "${input_prefix}/${sample_id}_R2_trim_samp-0p1.fastq.gz"
+    ]
+}
