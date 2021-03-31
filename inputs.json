@@ -7,9 +7,5 @@
         "chr20",
         "chr21",
         "chr22"
-    ],
-    "simple_variant_call.fastqs": [
-        "${input_prefix}/${sample_id}_R1_trim_samp-0p1.fastq.gz",
-        "${input_prefix}/${sample_id}_R2_trim_samp-0p1.fastq.gz"
     ]
 }
