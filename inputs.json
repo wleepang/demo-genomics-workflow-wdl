@@ -1,6 +1,5 @@
 {
-    "simple_variant_call.sample_id": "NIST7035",
-    "simple_variant_call.input_prefix": "s3://aws-batch-genomics-shared/secondary-analysis/example-files/fastq",
+    "simple_variant_call.sample_id": "NA12878",
     "simple_variant_call.reference": "s3://broad-references/hg38/v0/Homo_sapiens_assembly38.fasta",
     "simple_variant_call.chromosomes": [
         "chr19",

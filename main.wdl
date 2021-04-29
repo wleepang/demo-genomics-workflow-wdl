@@ -2,9 +2,8 @@ version 1.0
 
 workflow simple_variant_call {
     input {
-        String sample_id = "NIST7035"
-        String input_prefix = "s3://aws-batch-genomics-shared/secondary-analysis/example-files/fastq"
-
+        String sample_id = "NA12878"
+        
         File reference = "s3://broad-references/hg38/v0/Homo_sapiens_assembly38.fasta"
         String ref_name = basename(reference, ".fasta")
         
@@ -36,8 +35,8 @@ workflow simple_variant_call {
             "${reference}.64.sa"
         ]
         Array[File] fastqs = [
-            "${input_prefix}/${sample_id}_R1_trim_samp-0p1.fastq.gz",
-            "${input_prefix}/${sample_id}_R2_trim_samp-0p1.fastq.gz"
+            "s3://1000genomes/pilot_data/data/NA12878/pilot3_unrecal/SRR014820_1.fastq.gz",
+            "s3://1000genomes/pilot_data/data/NA12878/pilot3_unrecal/SRR014820_2.fastq.gz"
         ]
     }
 
